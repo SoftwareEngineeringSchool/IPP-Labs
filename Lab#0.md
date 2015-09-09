@@ -32,7 +32,11 @@ Code | Description
 
 Requests example:
 ```shell
-	$curl -o http://127.0.0.1/register?in='{"app_id": "0", "email": "mail@mail.com", "pass": "qwerty", "name_surname": "username"}'
+	$curl -o http://127.0.0.1/register?in='{
+												"app_id": "0", 
+												"email": "mail@mail.com", 
+												"pass": "qwerty", 
+												"name_surname": "username"}'
 	
 	{
 		"out": {
