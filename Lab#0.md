@@ -22,6 +22,7 @@ Get last user login time | http://oauthservice/get_last_login | {app_id,token,em
 - Which language to use is up to you.
 
 Codes description:
+
 Code | Description
 ---|---
 0 | OK
@@ -40,7 +41,11 @@ Requests example:
 		}
 	}
 
-	$curl -o http://127.0.0.1/register?in='{"app_id": "0", "email": "mail@mail.com", "pass": "qwerty", "name_surname": "username"}'
+	$curl -o http://127.0.0.1/register?in='{
+												"app_id": "0", 
+												"email": "mail@mail.com", 
+												"pass": "qwerty", 
+												"name_surname": "username"}'
 	
 	{
 		"out": {
@@ -67,10 +72,13 @@ Example:
 		}
 
 	Technical Issues:
-		- Result of ADD operation cannot be more than 9. Otherwise value will overfill return variable because it is digit type of. Solution: to use number type for return value.
+		- Result of ADD operation cannot be more than 9. Otherwise 
+		value will overfill return variable because it is digit type of. 
+		Solution: to use number type for return value.
 
 	Improvement features:
-		- ADD function operates with digit arguments only for now. Proposal: change arguments type to number.
+		- ADD function operates with digit arguments only for now. 
+		Proposal: change arguments type to number.
 
 ```
 
