@@ -1,4 +1,4 @@
-#Lab 2
+Lab#1
 -----
 1. Define sequence diagram of these 4 oAuth features:
 	- Register
